@@ -11,8 +11,8 @@ const Searchbar = ({setGetLocation}) => {
 
   return (
     <form onSubmit={searchLocation} className="searchbar" >
-        <input placeholder="type a number between 1 and 126" className="input" type="number" />
-        <button className="search-button">Search character</button>
+        <input placeholder="type a number from 1 to 126" className="input" type="number" />
+        <button className="search-button">Explore</button>
     </form>
   )
 }
