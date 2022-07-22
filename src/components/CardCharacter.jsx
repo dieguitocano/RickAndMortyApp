@@ -16,7 +16,7 @@ const CardCharacter = ({ resident }) => {
       .catch(err => console.log(err))
   }, [])
 
-  console.log(character)
+  
 
 
   return (

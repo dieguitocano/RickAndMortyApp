@@ -7,7 +7,7 @@ const LocationInfo = ({location}) => {
   
 
    
-   console.log(location)
+   
   return (
     <article className='location-container'>
       <h3 className='txt1'>{location?.name}</h3>
