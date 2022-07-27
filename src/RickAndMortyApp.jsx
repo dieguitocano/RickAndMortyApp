@@ -53,7 +53,7 @@ const RickAndMortyApp = () => {
     }
   }
 
-console.log(arrayPages)
+  console.log(arrayPages)
 
 
   return (
@@ -71,7 +71,7 @@ console.log(arrayPages)
         <Searchbar setGetLocation={setGetLocation} />
         <LocationInfo location={location} />
 
-        <Pagination 
+        <Pagination
           arrayPages={arrayPages}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
@@ -80,12 +80,17 @@ console.log(arrayPages)
 
         <div className='card-box'>
           {
-            arrayResidents?.map(resident => (
-              <CardCharacter resident={resident}
+            isLoading ?
+              <Loader />
 
-                key={resident}
-              />
-            ))
+              :
+
+              arrayResidents?.map(resident => (
+                <CardCharacter resident={resident}
+
+                  key={resident}
+                />
+              ))
             /* :
               <Loader />*/
           }

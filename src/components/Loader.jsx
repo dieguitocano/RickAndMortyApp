@@ -1,9 +1,11 @@
+import '../App.css'
+
 
 const Loader = ({Loader}) => {
 
 
   return (
-    <h3>Loading...</h3>
+    <div class="loader"></div>
   )
 }
 
